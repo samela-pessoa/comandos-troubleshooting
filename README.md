@@ -42,7 +42,14 @@ Este documento contém uma lista de comandos úteis para diagnosticar e resolver
   ```bash
   nc -zv <endereço IP> <porta>
   ```
-
+- **Debug de URLs com curl:**
+  ```bash
+  curl -I <URL>
+  ```
+- **Testar requisição HTTP:**
+  ```bash
+  curl -X GET <URL> -H "Authorization: Bearer <token>"
+  ```
 ---
 
 ## **2. Sistema Operacional**
@@ -130,18 +137,6 @@ Este documento contém uma lista de comandos úteis para diagnosticar e resolver
 - **Checar tempo de execução de uma query no MySQL:**
   ```sql
   EXPLAIN SELECT ...;
-  ```
-
----
-
-## **5. Ferramentas**
-- **Debug de URLs com curl:**
-  ```bash
-  curl -I <URL>
-  ```
-- **Testar requisição HTTP:**
-  ```bash
-  curl -X GET <URL> -H "Authorization: Bearer <token>"
   ```
 
 ---
