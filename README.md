@@ -119,26 +119,6 @@ Este documento contém uma lista de comandos úteis para diagnosticar e resolver
     ```cmd
     netstat -ano
     ```
-
----
-
-## **4. Banco de Dados**
-### **4.1 Diagnóstico**
-- **Testar conexão com banco de dados MySQL:**
-  ```bash
-  mysql -u <usuário> -p -h <endereço IP>
-  ```
-- **Verificar processos no PostgreSQL:**
-  ```sql
-  SELECT * FROM pg_stat_activity;
-  ```
-
-### **4.2 Performance**
-- **Checar tempo de execução de uma query no MySQL:**
-  ```sql
-  EXPLAIN SELECT ...;
-  ```
-
 ---
 
 Este README serve como um guia de referência rápida. Adicione mais comandos conforme necessário para se adequar aos seus cenários de troubleshooting!
